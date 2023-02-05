@@ -1,0 +1,69 @@
+@use "@/theme/colors";
+
+.arenda {
+  &__label {
+    font-size: 64px;
+    font-weight: 900;
+    margin: 96px 0;
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+
+    &_left {
+      display: flex;
+      gap: 96px;
+      flex-direction: column;
+
+      &_card {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+        max-width: 460px;
+        align-items: flex-start;
+
+        &_image {
+          height: 112px;
+        }
+
+        &_text {
+          font-size: 36px;
+          font-weight: 900;
+          margin: 0;
+        }
+      }
+    }
+
+    &_right {
+      display: flex;
+      flex-direction: column;
+
+      &_video {
+        width: 360px;
+      }
+
+      &_arrow {
+        position: relative;
+        top: 50px;
+        right: 175px;
+      }
+    }
+  }
+
+  &__readyButton {
+    border-radius: 56px;
+    background-color: colors.$background-black;
+    color: colors.$text-white;
+    font-weight: 900;
+    font-size: 40px;
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0;
+
+    position: relative;
+    top: 80px;
+  }
+}

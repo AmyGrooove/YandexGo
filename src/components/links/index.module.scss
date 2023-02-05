@@ -1,0 +1,32 @@
+@use "@/theme/colors";
+
+.links {
+  &__image {
+    &_down {
+      position: relative;
+      left: 20px;
+      top: 20px;
+    }
+
+    &_up {
+      display: flex;
+      justify-content: flex-end;
+
+      position: relative;
+      top: 25px;
+      right: 30px;
+    }
+  }
+
+  &__explanations {
+    font-size: 64px;
+    font-weight: 900;
+    color: colors.$text-white;
+    margin: 0;
+
+    &_town {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}

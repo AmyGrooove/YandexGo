@@ -1,0 +1,34 @@
+@use "./colors";
+
+* {
+  font-family: "YandexSansText";
+  line-height: 110%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: colors.$background-main;
+  height: 100%;
+}
+
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+
+  &_tariff {
+    margin: 0 auto;
+    max-width: 1108px;
+  }
+}
+
+button {
+  background-color: colors.$background-black;
+  border-radius: 18px;
+  color: colors.$text-white;
+  cursor: pointer;
+}

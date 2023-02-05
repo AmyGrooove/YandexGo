@@ -1,0 +1,49 @@
+@use "@/theme/colors";
+
+.header {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px;
+  z-index: 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  background-color: colors.$background-main;
+
+  &__logo {
+    cursor: pointer;
+    width: 158px;
+    height: 45px;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 16px;
+    padding: 0px;
+
+    &_link {
+      color: colors.$text-black;
+      font-weight: 600;
+      font-size: 16px;
+      cursor: pointer;
+
+      &::marker {
+        content: none;
+      }
+    }
+  }
+
+  &__button {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 12px 48px;
+  }
+}

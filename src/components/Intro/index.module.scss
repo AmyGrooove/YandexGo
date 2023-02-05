@@ -1,0 +1,29 @@
+@use "@/theme/colors";
+
+.intro {
+  margin-top: 140px;
+  height: 750px;
+
+  &__img {
+    width: 920px;
+    height: 600px;
+  }
+
+  &__description {
+    position: relative;
+    bottom: 130px;
+
+    &_text {
+      font-size: 36px;
+      font-weight: 700px;
+      max-width: 510px;
+    }
+
+    &_button {
+      border-radius: 24px;
+      font-size: 24px;
+      font-weight: 600;
+      padding: 24px 56px;
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@use "@/theme/colors";
+
+.tariff {
+  margin-top: 130px;
+
+  display: flex;
+  gap: 30px;
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 92px;
+
+    &_right {
+      margin-left: 0px;
+      margin-top: 92px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    border-radius: 56px;
+
+    &_left {
+      padding: 72px 56px;
+      width: 408px;
+    }
+
+    &_right {
+      padding: 72px 56px;
+    }
+
+    &_solid {
+      border: 5px solid colors.$background-black;
+    }
+
+    &_dashed {
+      border: 5px dashed colors.$background-black;
+    }
+
+    &_plus {
+      border: 5px solid colors.$tranparent;
+      background-image: url(../../../public/icons/tariff_back.svg);
+      background-position: center;
+    }
+
+    &_img {
+      width: 60px;
+
+      &_plus {
+        width: 85px;
+      }
+    }
+
+    &_label {
+      font-size: 36px;
+      font-weight: 900;
+
+      &_plus {
+        display: flex;
+      }
+    }
+
+    &_description {
+      font-size: 22px;
+      font-weight: 400;
+      max-width: 600px;
+    }
+  }
+}
